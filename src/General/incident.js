@@ -47,9 +47,10 @@ export default class incident extends Component {
     this.state.filterdept !== ''
       ? this.setState({
           incidentlist: this.state.incidents.filter(incident => {
-            return incident.department
-              .toLowerCase()
-              .includes(this.state.filterdept.toLowerCase());
+            return (
+              incident.department.toLowerCase() ==
+              this.state.filterdept.toLowerCase()
+            );
           })
         })
       : this.setState({
