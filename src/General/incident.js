@@ -14,7 +14,7 @@ export default class incident extends Component {
     this.getIncidents();
   }
   getIncidents() {
-    fetch('http://localhost:3000/incidentlogs')
+    fetch('https://sheltered-citadel-09312.herokuapp.com/incidentlogs')
       .then(response => {
         return response.json();
       })
@@ -26,9 +26,13 @@ export default class incident extends Component {
   }
   deleteIncidents = incident => {
     console.log('here', incident);
-    fetch('http://localhost:3000/incidentlogs/' + incident.id, {
-      method: 'DELETE'
-    })
+    fetch(
+      'https://sheltered-citadel-09312.herokuapp.com/incidentlogs/' +
+        incident.id,
+      {
+        method: 'DELETE'
+      }
+    )
       .then(() => {
         this.getIncidents();
         // return response.json();

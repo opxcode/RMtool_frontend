@@ -9,7 +9,7 @@ export default class updatelog extends Component {
   }
   updateIncidents = id => {
     console.log('here', id);
-    fetch('http://localhost:3000/incidentlogs/' + id, {
+    fetch('https://sheltered-citadel-09312.herokuapp.com/incidentlogs/' + id, {
       body: JSON.stringify(this.state.formInputs),
       method: 'PUT',
       headers: {

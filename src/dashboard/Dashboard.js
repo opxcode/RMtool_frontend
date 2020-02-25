@@ -62,7 +62,7 @@ export default class Dashboard extends Component {
     this.getData2();
   }
   getData1() {
-    fetch('http://localhost:3000/incidentlogs')
+    fetch('https://sheltered-citadel-09312.herokuapp.com/incidentlogs')
       .then(response => {
         return response.json();
       })
@@ -73,7 +73,7 @@ export default class Dashboard extends Component {
       .catch(error => console.error(error));
   }
   getData2() {
-    fetch('http://localhost:3000/incidentquery')
+    fetch('https://sheltered-citadel-09312.herokuapp.com/incidentquery')
       .then(response => {
         return response.json();
       })

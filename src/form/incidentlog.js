@@ -19,7 +19,7 @@ export default class incidentlog extends Component {
   handleSubmit = event => {
     event.preventDefault();
     console.log('form inputs', this.state.formInputs);
-    fetch('http://localhost:3000/incidentlogs', {
+    fetch('https://sheltered-citadel-09312.herokuapp.com/incidentlogs', {
       body: JSON.stringify(this.state.formInputs),
       method: 'POST',
       headers: {

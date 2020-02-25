@@ -14,7 +14,7 @@ export default class Home extends Component {
     this.getapi();
   }
   getupdates() {
-    fetch('http://localhost:3000/scrapper')
+    fetch('https://sheltered-citadel-09312.herokuapp.com/scrapper')
       .then(response => {
         console.log('fetching...');
         return response.json();
