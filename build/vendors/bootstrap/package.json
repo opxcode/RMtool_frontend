@@ -11,10 +11,7 @@
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
     "react-virtualized": "^9.21.2",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "react-scripts": "3.2.0"
   },
   "devDependencies": {
     "react-scripts": "3.2.0"
